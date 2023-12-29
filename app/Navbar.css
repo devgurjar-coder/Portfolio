@@ -1,0 +1,92 @@
+/* Add styles for the scrolled Navbar */
+
+.navbar {
+    display: flex;
+    background-color: white;
+    color:black;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center; /* Center the logo and menu icon vertically */
+  }
+  
+  .logo {
+    color:black;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .logo:hover {
+    color: orangered;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Remove list-style from the ul */
+    padding: 0; /* Remove default padding */
+  }
+  
+  li {
+    display: block;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  li:hover {
+    color: orangered;
+  }
+  
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Add styles for the open menu */
+  .menu-open {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu-items.open {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+  }
+  
+  @media (max-width: 760px) {
+    .menu {
+      display: flex;
+    }
+  
+    .menu-items {
+      display: none;
+    }
+  }
+  .navbar.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black; /* Change the background color when scrolled */
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

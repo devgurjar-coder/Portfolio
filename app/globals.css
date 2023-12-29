@@ -1,0 +1,7 @@
+/* hr {
+    display: none;
+} */
+body {
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+  }
+  

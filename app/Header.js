@@ -13,7 +13,7 @@ const Header = () => {
         <p>
         "Welcome! I'm a self-taught web developer passionate about crafting intuitive digital experiences. Seeking an internship to learn, grow, and contribute. Explore my portfolio for a glimpse of my dedication to clean code and user-centric design. Let's connect and create something amazing together!"
         </p>
-        <a href="https://drive.google.com/file/d/1ToxGKf7u_8b2ovPh0qaomu1orwFFh1Kb/view" target="_blank">
+        <a href="https://drive.google.com/file/d/13PhHsCAs9FlGB1MT7RgoO23I_y1eHpAt/view" target="_blank">
   <button>Get My Resume</button>
 </a>
 

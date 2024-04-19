@@ -4,6 +4,7 @@
   padding: 20px;
   overflow: hidden; /* Hide vertical scrollbar */
 }
+
 .project-section h2 {
   font-size: 32px;
   margin-bottom: 20px;
@@ -14,19 +15,17 @@
   font-weight: bold; /* Make the text bold */
 }
 
-
-
 .video-column {
   display: flex;
+  flex-wrap: wrap; /* Wrap items onto multiple lines */
   justify-content: center;
   gap: 20px;
-  overflow-x: auto;
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow: hidden; /* Hide vertical scrollbar */
 }
 
 .video-wrapper {
-  flex: 0 0 auto;
-  width: 480px; /* Increased width for larger videos */
+  flex: 0 0 calc(50% - 20px); /* Two videos per row with gap */
+  max-width: calc(50% - 20px); /* Set maximum width for larger screens */
   height: 270px; /* Increased height for larger videos */
   border-radius: 12px; /* Adjust border-radius for larger videos */
   overflow: hidden;
@@ -43,4 +42,12 @@
 
 .video-wrapper:hover iframe {
   transform: scale(1.05); /* Slightly increase scale on hover for emphasis */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .video-wrapper {
+    flex: 0 0 calc(100% - 20px); /* Full width with gap */
+    max-width: calc(100% - 20px); /* Set maximum width to full width */
+  }
 }

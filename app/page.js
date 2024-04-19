@@ -2,7 +2,6 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Header from './Header'
-import Skill from './Skill'
 import Projects from './Projects';
 import Footer from './Footer'
 import './globals.css'
@@ -13,7 +12,6 @@ const App = () => {
     <Navbar/>
     <Header/>
     <Projects/>
-    <Skill/>
     <Footer/>
     </>
   );

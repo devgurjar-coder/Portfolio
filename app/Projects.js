@@ -1,36 +1,35 @@
 import React from 'react';
-import './Projects.css';
+import './Projects.css'; // Import the updated CSS file
 
-const Projects = () => {
+const ProjectSection = () => {
   return (
-    <>
-      <div id='projects' className="pro-heading">
-        <h1>Some of My Projects</h1>
-      </div>
-      <div className="project-section">
-        <div className="box">
-          <div className="pro-logo">
-            <img src="netflix.png" alt="" />
-          </div>
-          <div className="pro-name">React-Amazon-Clone</div>
-          <div className="pro-des">
-            React amazon-clone It is a great Amazon clone where you can sign in, sign out, create an Amazon account, and also add products to the cart. The most amazing part is that you can see the total of all items.
-          </div>
-          <a href="https://react--clone-506ca.web.app" target="_blank">Check it out</a>
+    <div id='projects' className="project-section">
+      <h2>Discover My Works</h2>
+      <div className="video-column">
+        <div className="video-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/936230582?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="Akshay on Goku and Discipline in His Life"
+          ></iframe>
         </div>
-        <div className="box">
-          <div className="pro-logo">
-            <img src="amazon.jpg" alt="" />
-          </div>
-          <div className="pro-name">React-Firebase-netflix-Clone</div>
-          <div className="pro-des">
-            React amazon-clone It is a great Amazon clone where you can sign in, sign out, create an Amazon account, and also add products to the cart. The most amazing part is that you can see the total of all items.
-          </div>
-          <a href="https://react-netflix-clone-e99fa.web.app" target="_blank">Check it out</a>
+        <div className="video-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/936241813?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="Samurai Death and Discipline"
+          ></iframe>
+        </div>
+        <div className="video-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/936238135?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="Akshay on Goku and Discipline in His Life"
+          ></iframe>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Projects;
+export default ProjectSection;

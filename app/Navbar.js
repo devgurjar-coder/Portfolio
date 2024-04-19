@@ -1,8 +1,8 @@
-'use client'
+"use client"
 import React, { useState } from 'react';
 import './Navbar.css';
 import { AiOutlineBars, AiFillCloseCircle } from 'react-icons/ai';
-import { Link } from 'react-scroll'; // Import Link from react-scroll
+import { Link as ScrollLink } from 'react-scroll'; // Import Link from react-scroll with an alias
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -22,17 +22,17 @@ const Navbar = () => {
     <>
       <div className={`navbar ${menu ? 'menu-open' : ''}`}>
         <div className="logo">
-          <h1>Dev Gurjar</h1>
+          <h1>EditWithDev</h1>
         </div>
         <ul className={`menu-items ${menu ? 'open' : ''}`}>
           <li onClick={closeMenu}>
-            <Link to="about" smooth={true} duration={500}>About me</Link>
+            <ScrollLink to="about" smooth={true} duration={500}>About me</ScrollLink>
           </li>
           <li onClick={closeMenu}>
-            <Link to="projects" smooth={true} duration={500}>Projects</Link>
+            <ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink>
           </li>
           <li onClick={closeMenu}>
-            <Link to="contact" smooth={true} duration={500}>Contact us</Link>
+            <ScrollLink to="contact" smooth={true} duration={500}>Contact us</ScrollLink>
           </li>
         </ul>
         <div className="menu" onClick={toggleButton}>

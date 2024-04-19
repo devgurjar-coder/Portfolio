@@ -8,13 +8,11 @@ const Header = () => {
         <h2>Hello</h2>
         <h3>Dev Here</h3>
         <h1>
-          <span>FrontEnd</span> developer
+          <span>SHORT FORM</span> Video Editor
         </h1>
-        <p>
-        "Welcome! I'm a self-taught web developer passionate about crafting intuitive digital experiences. Seeking an internship to learn, grow, and contribute. Explore my portfolio for a glimpse of my dedication to clean code and user-centric design. Let's connect and create something amazing together!"
-        </p>
-        <a href="https://drive.google.com/file/d/13PhHsCAs9FlGB1MT7RgoO23I_y1eHpAt/view" target="_blank">
-  <button>Get My Resume</button>
+        <p>Your go-to freelace short-form video edior! I may be new to the scene, but my creativity knows no bounds. I specialize in crafting engaging video that leaves a lasting impression Let's collaborate and turn your vision into captivating content that shines!</p>
+        <a href="https://www.upwork.com/freelancers/~01434f2094a86cefc9" target="_blank">
+  <button>Hire Me</button>
 </a>
 
       </div>

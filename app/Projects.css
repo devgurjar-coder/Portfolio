@@ -1,76 +1,46 @@
 .project-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; /* Change to column layout */
-    width: 100%;
-    padding: 20px;
-  }
-  
-  .pro-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    color: orangered;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .box {
-    width: 90%; /* Adjust the width for smaller screens */
-    max-width: 300px; /* Limit the maximum width */
-    height: auto; /* Adjust height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
-    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.2s; /* Add a hover effect */
-  }
-  
-  .box:hover {
-    transform: scale(1.05);
-  }
-  
-  .pro-logo img {
-    width: 100%; /* Make the image responsive */
-  }
-  
-  .pro-des {
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .box a {
-    text-decoration: none;
-    font-size: 20px;
-    color: blue;
-    margin-top: 10px;
-  }
-  
-  .box a:hover {
-    color: gray;
-  }
-  
-  .pro-name {
-    font-size: 20px;
-    font-weight: bolder;
-    margin-bottom: 10px;
-    margin-top: 20px;
-  }
-  
-  @media (min-width: 768px) {
-    .project-section {
-      flex-direction: row; /* Switch back to row layout on larger screens */
-    }
-  
-    .box {
-      width: 30%; /* Restore the original width for larger screens */
-    }
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden; /* Hide vertical scrollbar */
+}
+.project-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Adjust text color as needed */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Increase letter spacing for emphasis */
+  font-weight: bold; /* Make the text bold */
+}
+
+
+
+.video-column {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+.video-wrapper {
+  flex: 0 0 auto;
+  width: 480px; /* Increased width for larger videos */
+  height: 270px; /* Increased height for larger videos */
+  border-radius: 12px; /* Adjust border-radius for larger videos */
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased box shadow for emphasis */
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px; /* Adjust border-radius for larger videos */
+  transition: transform 0.3s ease;
+}
+
+.video-wrapper:hover iframe {
+  transform: scale(1.05); /* Slightly increase scale on hover for emphasis */
+}

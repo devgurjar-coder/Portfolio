@@ -1,7 +1,13 @@
+body {
+  background-color: black;
+}
+
 .project-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background: linear-gradient(to top left, black 0%, black 30%, royalblue 50%, royalblue 70%, black 100%);  /* Diagonal gradient (black bottom right to blue top left) */
+  color: #fff; /* Light text color to contrast with dark background */
   overflow: hidden; /* Hide vertical scrollbar */
 }
 
@@ -9,10 +15,10 @@
   font-size: 32px;
   margin-bottom: 20px;
   text-align: center;
-  color: #333; /* Adjust text color as needed */
   text-transform: uppercase; /* Convert text to uppercase */
   letter-spacing: 2px; /* Increase letter spacing for emphasis */
   font-weight: bold; /* Make the text bold */
+  color: #fff; /* Light text color for heading */
 }
 
 .video-column {
@@ -24,20 +30,24 @@
 }
 
 .video-wrapper {
-  flex: 0 0 calc(50% - 20px); /* Two videos per row with gap */
-  max-width: calc(50% - 20px); /* Set maximum width for larger screens */
-  height: 270px; /* Increased height for larger videos */
-  border-radius: 12px; /* Adjust border-radius for larger videos */
+  /* Set aspect ratio for reels video (9:16) */
+  position: relative;
+  width: calc(33.33% - 20px); /* Adjust width based on number of videos per row */
+  padding-top: 56.25%; /* Maintain 9:16 aspect ratio */
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased box shadow for emphasis */
+  border-radius: 12px; /* Adjust border-radius for larger videos */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased box shadow for emphasis */
+  background-color: #333; /* Darker background for video container */
+  transition: transform 0.3s ease;
 }
 
 .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 12px; /* Adjust border-radius for larger videos */
-  transition: transform 0.3s ease;
 }
 
 .video-wrapper:hover iframe {
@@ -46,8 +56,8 @@
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
+  
   .video-wrapper {
-    flex: 0 0 calc(100% - 20px); /* Full width with gap */
-    max-width: calc(100% - 20px); /* Set maximum width to full width */
+    width: 100%; /* Set full width for each video on smaller screens */
   }
 }

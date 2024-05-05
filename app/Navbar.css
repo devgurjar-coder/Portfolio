@@ -1,92 +1,92 @@
-/* Add styles for the scrolled Navbar */
-
 .navbar {
-    display: flex;
-    background-color: white;
-    color:black;
-    justify-content: space-between;
-    padding: 0px 20px;
-    align-items: center; /* Center the logo and menu icon vertically */
-  }
-  
-  .logo {
-    color:black;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .logo:hover {
-    color: orangered;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
+  background-color:transparent; 
+}
+
+/* Style for scrolled state (adjust colors as needed) */
+.navbar.scrolled {
+  background-color: #0e0e0e;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: #fff; /* Adjust logo color */
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo:hover {
+  color: #f0f0f0; /* Adjust hover color for logo */
+}
+
+ul {
+  display: flex;
+  justify-content: space-between; /* Space evenly on larger screens */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+li {
+  display: block;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+li:hover {
+  color: #f0f0f0; /* Adjust hover color for links */
+}
+
+/* Hamburger menu icon */
+.menu {
+  display: none; /* Hide menu on larger screens initially */
+  cursor: pointer;
+  font-size: 20px; /* Adjust menu icon size */
+}
+
+/* Styles for opened menu (adjust colors as needed) */
+.menu-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.3s ease-in-out; /* Add a transition for the menu open state */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Hide menu items and show menu icon on smaller screens */
+@media screen and (max-width: 768px) {
   ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none; /* Remove list-style from the ul */
-    padding: 0; /* Remove default padding */
+    display: none; /* Hide menu items on smaller screens */
   }
-  
-  li {
-    display: block;
-    padding: 0 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  li:hover {
-    color: orangered;
-  }
-  
+
   .menu {
-    display: none;
-    cursor: pointer;
+    display: block; /* Show menu icon on smaller screens */
   }
-  
-  /* Add styles for the open menu */
-  .menu-open {
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    padding: 20px;
+
+  /* Prevent clicks on the logo from closing the menu (optional) */
+  .logo {
+    pointer-events: none; /* Disables clicks on the logo in this media query */
   }
-  
-  .menu-items {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .menu-items.open {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 30px;
-  }
-  
-  @media (max-width: 760px) {
-    .menu {
-      display: flex;
-    }
-  
-    .menu-items {
-      display: none;
-    }
-  }
-  .navbar.scrolled {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: black; /* Change the background color when scrolled */
-    z-index: 100;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+}

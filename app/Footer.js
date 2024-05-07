@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="links-container"> {/* Corrected class name */}
         <a href="https://www.linkedin.com/in/dev-gurjar63" target="_blank">
           <img src="linkdin.png" alt="LinkedIn" />
-        </a>
+        </a> 
         <a href="https://twitter.com/@devgurjar_63" target="_blank">
           <img src="twitter.png" alt="Twitter" />
         </a>

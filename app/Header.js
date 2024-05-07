@@ -24,7 +24,7 @@ const Header = () => {
         </a>
       </div>
       <div className="right">
-        <img src="profile-picture.jpg" alt="Your Profile Picture" />
+        <img src="mes.png" alt="Your Profile Picture" />
       </div>
     </header>
   );

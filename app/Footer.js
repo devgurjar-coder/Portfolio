@@ -13,7 +13,7 @@ const Footer = () => {
           <img src="twitter.png" alt="Twitter" />
         </a>
         <a href="https://www.instagram.com/editshifters?utm_source=qr&igsh=c3Q1bWo5YTJwd" target="_blank">
-          <img src="instagram.avif" alt="instagram" />
+          <img src="instagramlogo1.png" alt="instagram" />
         </a>
         <a href="mailto:gurjarsunny420@gmail.com" target="_blank">
           <img src="Gmail.webp" alt="Gmail" />

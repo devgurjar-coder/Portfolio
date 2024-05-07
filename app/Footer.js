@@ -5,7 +5,7 @@ import { BiPhoneCall } from 'react-icons/bi';
 const Footer = () => {
   return (
     <div id="contact" className="footer">
-      <div className="link">
+      <div className="links-container"> {/* Corrected class name */}
         <a href="https://www.linkedin.com/in/dev-gurjar63" target="_blank">
           <img src="linkdin.png" alt="LinkedIn" />
         </a>
@@ -15,11 +15,9 @@ const Footer = () => {
         <a href="https://www.instagram.com/editshifters?utm_source=qr&igsh=c3Q1bWo5YTJwd" target="_blank">
           <img src="instagram.avif" alt="instagram" />
         </a>
-       
         <a href="mailto:gurjarsunny420@gmail.com" target="_blank">
-  <img src="Gmail.webp" alt="Gmail" />
-</a>
-
+          <img src="Gmail.webp" alt="Gmail" />
+        </a>
       </div>
       <div className="number">
         <BiPhoneCall />
@@ -30,4 +28,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

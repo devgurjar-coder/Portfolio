@@ -16,7 +16,7 @@ const Header = () => {
           videos that leave a lasting impression. Let's collaborate and turn your
           vision into captivating content that shines!
         </p>
-        <a href="https://www.upwork.com/freelancers/~01434f2094a86cefc9" target="_blank">
+        <a href="https://www.fiverr.com/devgurjar_edit/edit-your-instagram-reels-youtube-shorts-and-tiktok-videos" target="_blank">
           <button>Hire Me</button>
         </a>
         <a href="mailto:gurjarsunny420@gmail.com" target="_blank">
